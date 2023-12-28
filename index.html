@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- hello there -->
+<html lang="en-GB"> <!-- general kenobi -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Blogs" property="og:title" />
+        <meta content="all of owlly's blogs" property="og:description" />
+        <meta content="https://owllycodes.com/blogs" property="og:url" />
+        <meta content="https://owllycodes.com/static/favicon_io/android-chrome-192x192.png" property="og:image" />
+        <meta content="#3352a7" data-react-helmet="true" name="theme-color" />
+        <title>Owlly's Blogs</title>
+        <link rel="stylesheet" href="https://owllycodes.com/css/style.css">
+        <link rel="stylesheet" href="https://owllycodes.com/blogs/css/blogs.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://owllycodes.com/static/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://owllycodes.com/static/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://owllycodes.com/static/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="https://owllycodes.com/static/favicon_io/site.webmanifest">
+    </head>
+    <body  class="default">
+        <div class="top-bar default">
+            <button class="topb default" onclick = "redirect('/')">home</button>
+            <button class="topb default" onclick = "redirect('projects')">projects</button>
+            <button class="topb default topba">blogs</button>
+            <button class="topb default" onclick="redirect('contacts')">contacts</button>
+            <button class="site-colours default" onclick="cycleTheme()"></button>
+        </div>
+        <button class="borgir">
+            <div class="bar"></div>
+        </button>
+        <div class="mobile-menu default">
+            <ul>
+                <li><button class="menui default" onclick = "redirect('/')">home</button></li>
+                <li><button class="menui default" onclick = "redirect('projects')">projects</button></li>
+                <li><button class="menui default menuia">blogs</button></li>
+                <li><button class="menui default" onclick="redirect('contacts')">contacts</button></li>
+                <li><button class="msite-colours default" onclick="cycleTheme()"></button></li>
+            </ul>
+        </div>
+        <main>
+            <h1>🖋️ My Blogs</h1>
+            <div class="cards">
+                <div class="card" onclick="redirect('/blogs/posts/my-first-post')">
+                    <h2>📝 My First Post</h2>
+                    <p>
+                        This is my first post! I w...
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <p>© 2021-2024 Owlly | made with <span class="qhover" title="AAAAAAAAA">PAIN</span> and 🍵 |</p>
+                <p class="patreon">
+                    <img src="https://owllycodes.com/static/heartfireworkGIF.gif" alt="heart gif" class="heart-gif" />
+                    <a href="https://www.patreon.com/Owlly9" target="_blank" rel="noopener noreferrer">Patreon</a>
+                </p>
+            </div>
+        </footer>
+        <!-- cookie banner -->
+        <div id="cookie-banner">
+            <img src="https://owllycodes.com/static/sys-nuetral.png" alt="system" id="sys">
+            <p>This site uses cookies for proper functioning. Accept the cookies for access.</p>
+            <button class="cookie-btn" onclick="acceptCookie()">Accept</button>
+            <button class="cookie-btn" id="cookie-deny" onclick="denyCookie()">Deny</button>
+        </div>
+        <script src="https://owllycodes.com/js/script.js"></script>
+    </body>
+</html>
